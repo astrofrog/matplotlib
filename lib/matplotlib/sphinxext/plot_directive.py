@@ -635,6 +635,10 @@ def render_figures(code, code_path, output_dir, output_base, context,
     else:
         ns = {}
 
+    if context and config.plot_apply_rcparams:
+        matplotlib.rc_file_defaults()
+        matplotlib.rcParams.update(config.plot_rcparams)
+
     for i, code_piece in enumerate(code_pieces):
         if not context or config.plot_apply_rcparams:
             clear_state(config.plot_rcparams)
