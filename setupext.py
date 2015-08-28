@@ -598,6 +598,7 @@ class Matplotlib(SetupPackage):
                 'mpl-data/images/*.gif',
                 'mpl-data/images/*.png',
                 'mpl-data/images/*.ppm',
+                'mpl-data/images_hidpi/*.png',
                 'mpl-data/example/*.npy',
                 'mpl-data/matplotlibrc',
                 'backends/web_backend/*.*',

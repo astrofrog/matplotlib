@@ -406,7 +406,7 @@ class NavigationToolbar2Mac(_macosx.NavigationToolbar2, NavigationToolbar2):
         NavigationToolbar2.__init__(self, canvas)
 
     def _init_toolbar(self):
-        basedir = os.path.join(rcParams['datapath'], "images")
+        basedir = os.path.join(rcParams['datapath'], "images_hidpi")
         _macosx.NavigationToolbar2.__init__(self, basedir)
 
     def draw_rubberband(self, event, x0, y0, x1, y1):
